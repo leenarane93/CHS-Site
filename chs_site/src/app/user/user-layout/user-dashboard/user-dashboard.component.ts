@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { NgbCarousel, NgbSlideEvent, NgbSlideEventSource } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-user-dashboard',
@@ -6,72 +7,38 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./user-dashboard.component.css']
 })
 export class UserDashboardComponent implements OnInit {
-
-  event_list = [
-    {
-      event:' Event 1',
-      eventLocation:'Bangalore',
-      eventDescription:'In bangalore, first event is going to happen. Please be careful about it',
-      img: 'https://picsum.photos/900/500?random&t=1',
-      eventStartDate: new Date('2019/05/20'),
-      eventEndingDate: new Date('2019/05/24')
-    },
-     {
-      event:' Event 2',
-      eventLocation:'Dubai',
-      eventDescription:'Dubai is another place to host so,e, first event is going to happen. Please be careful about it',
-      img: 'https://picsum.photos/900/500?random&t=3',
-      eventStartDate: new Date('2019/07/28'),
-      eventEndingDate: new Date('2019/07/30')
-    },
-     {
-      event:' Event 3',
-      eventLocation:'New York',
-      eventDescription:'NewYork sits on top of event hosting',
-      img: 'https://picsum.photos/900/500?random&t=4',
-      eventStartDate: new Date('2020/05/20'),
-      eventEndingDate: new Date('2020/05/24')
-    },
-     {
-      event:' Event 4',
-      eventLocation:'Singapore',
-      eventDescription:'Singapore is another great hosting city',
-      img: 'https://picsum.photos/900/500?random&t=6',
-      eventStartDate: new Date('2018/05/20'),
-      eventEndingDate: new Date('2018/05/24')
-    },
-    {
-      event:' Event 5',
-      eventLocation:'Berlin',
-      eventDescription: 'Berlin is best place to hang on',
-      img: 'https://picsum.photos/900/500?random&t=7',
-      eventStartDate: new Date('2017/07/10'),
-      eventEndingDate: new Date('2017/08/14')
-    },
-    {
-      event:' Event 6',
-      eventLocation:'Mumbai',
-      eventDescription:'Mumbai is hub of startups',
-      img: 'https://picsum.photos/900/500?random&t=8',
-      eventStartDate: new Date(),
-      eventEndingDate: new Date()
-    },
-    {
-      event:' Event 7',
-      eventLocation:'Barcelona',
-      eventDescription:'Barcelona is another good city',
-      img: 'https://picsum.photos/900/500?random&t=6',
-      eventStartDate: new Date(),
-      eventEndingDate: new Date()
-    },
-  ]
-
-  upcoming_events =  this.event_list.filter( event => event.eventStartDate > new Date());
-  past_events = this.event_list.filter(event => event.eventEndingDate < new Date());
-  current_events =  this.event_list.filter( event => (event.eventStartDate >= new Date() && (event.eventEndingDate <= new Date())))
-  constructor() {
+  ngOnInit(): void {
+    
   }
+images = [62, 83, 466, 965, 982, 1043, 738].map((n) => `https://picsum.photos/id/${n}/900/500`);
 
-  ngOnInit() {
-  }
+	paused = false;
+	unpauseOnArrow = false;
+	pauseOnIndicator = false;
+	pauseOnHover = true;
+	pauseOnFocus = true;
+
+	@ViewChild('carousel', { static: true })
+  carousel!: NgbCarousel;
+	togglePaused() {
+		if (this.paused) {
+			this.carousel.cycle();
+		} else {
+			this.carousel.pause();
+		}
+		this.paused = !this.paused;
+	}
+  	onSlide(slideEvent: NgbSlideEvent) {
+		if (
+			this.unpauseOnArrow &&
+			slideEvent.paused &&
+			(slideEvent.source === NgbSlideEventSource.ARROW_LEFT || slideEvent.source === NgbSlideEventSource.ARROW_RIGHT)
+		) {
+			this.togglePaused();
+		}
+		if (this.pauseOnIndicator && !slideEvent.paused && slideEvent.source === NgbSlideEventSource.INDICATOR) {
+			this.togglePaused();
+		}
+	}
+
 }
