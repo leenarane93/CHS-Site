@@ -5,3 +5,73 @@
 .borderRad {
   border-radius: 25px;
 }
+
+.div-col {
+  background-color: aliceblue;
+}
+
+.card-header {
+  border-top: #ce0037;
+  font-weight: bold;
+}
+
+.img-viewers {
+  padding-top: 15px;
+  border-radius: 25px;
+  background-color: aliceblue;
+  text-decoration: underline;
+  font-size: larger;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container-menu {
+  padding-top: 50px;
+}
+
+.menu-card {
+  border-radius: 25px;
+  font-size: x-large;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding-bottom: 20px;
+}
+
+.example-card {
+  border-radius: 25px;
+  max-width: 300px;
+}
+
+.example-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}
+
+.striped {
+  background-color: #FFF;
+  background-image: linear-gradient(transparent 60%, rgba(255, 105, 155, .5) 40%);
+  background-size: 80px 55px;
+}
+
+.chs-ud-mnu-btm {
+  padding-bottom: 5px;
+  border-bottom: 2px solid #aaa;
+  border-color: blue;
+}
+
+h2 {
+  font: 60px sans-serif;
+  margin-top: 30px;
+  position: relative;
+  text-transform: uppercase;
+  z-index: 1;
+  display: inline;
+}
+
+.chs-card-flats-availble {
+  max-width: 400px;
+  margin-bottom: 8px;
+}
+
+.chs-flat-link {
+  color: blue;
+}

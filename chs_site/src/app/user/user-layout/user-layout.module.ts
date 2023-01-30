@@ -5,6 +5,7 @@ import { HeaderComponent } from './shared/header/header.component';
 import { UserLayoutRoutingModule } from './user-layout-routing.module';
 import { UserDashboardComponent } from './user-dashboard/user-dashboard.component';
 import { MaterialExampleModule } from 'src/app/material.module';
+import { UserFooterComponent } from './shared/user-footer/user-footer.component';
 
 
 
@@ -12,7 +13,8 @@ import { MaterialExampleModule } from 'src/app/material.module';
   declarations: [
     UserLayoutComponent,
     HeaderComponent,
-    UserDashboardComponent
+    UserDashboardComponent,
+    UserFooterComponent
   ],
   imports: [
     CommonModule,
