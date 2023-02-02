@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
+import { AdminLayoutComponent } from './admin/admin-layout/admin-layout.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { UserLayoutComponent } from './user/user-layout/user-layout.component';
@@ -20,6 +21,19 @@ const routes: Routes = [{
     ],
   },
   {
+    path: "admin",
+    component: AdminLayoutComponent,
+    children: [
+      {
+        path: "",
+        loadChildren: () =>
+          import("../app/admin/admin.module").then(
+            (x) => x.AdminModule
+          ),
+      },
+    ],
+  },
+  {
     path:"",
     component:LoginComponent
   },
@@ -30,7 +44,7 @@ const routes: Routes = [{
    {
     path:"register",
     component:RegisterComponent
-  }
+  },
 ];
 
 @NgModule({
