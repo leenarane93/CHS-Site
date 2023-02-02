@@ -94,3 +94,7 @@
     width: 3rem;
     height: 3rem;
 }
+
+.bg-background {
+    backdrop-filter: blur(5px);
+}

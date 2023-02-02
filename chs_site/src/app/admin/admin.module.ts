@@ -6,6 +6,7 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { MaterialExampleModule } from '../material.module';
 import { AdminLayoutRoutingModule } from './admin-routing.module';
 import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
+import { SocietyRegisterComponent } from './society-register/society-register.component';
 
 
 
@@ -14,7 +15,8 @@ import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.compo
     AdminLayoutComponent,
     HeaderComponent,
     FooterComponent,
-    AdminDashboardComponent
+    AdminDashboardComponent,
+    SocietyRegisterComponent
   ],
   imports: [
     CommonModule,
