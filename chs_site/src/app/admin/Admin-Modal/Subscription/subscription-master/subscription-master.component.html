@@ -1,0 +1,71 @@
+<div class="container-fluid maincard">
+    <div class="row">
+        <div class="row d-flex align-items-center justify-content-center">
+            <div class="col-md-9">
+                <div class="title-card">
+                    Subscription Master
+                </div>
+            </div>
+        </div>
+        <form class="example-form">
+            <div class="row d-flex align-items-center justify-content-center">
+                <div class="col-md-4">
+                    <mat-form-field class=" example-full-width">
+                        <mat-label>Subscription Code*</mat-label>
+                        <input matInput #input maxlength="100" placeholder="Ex. Nougat">
+                    </mat-form-field>
+                </div>
+                <div class="col-md-4">
+                    <mat-form-field class=" example-full-width">
+                        <mat-label>Subscription Name*</mat-label>
+                        <input matInput #input maxlength="200" placeholder="Ex. Nougat">
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="row d-flex align-items-center justify-content-center">
+                <div class="col-md-4">
+                    <mat-form-field class="example-full-width">
+                        <mat-label>Description*</mat-label>
+                        <textarea matInput></textarea>
+                    </mat-form-field>
+                </div>
+                <div class="col-md-4">
+                    <button type="button" mat-button (click)="OpenKeyPanel()">Add Key Point*</button>
+                </div>
+            </div>
+            <div class="row d-flex align-items-center justify-content-center">
+                <div class="col-md-8">
+                    <mat-form-field class="example-full-width">
+                        <mat-label>Price*</mat-label>
+                        <input matInput #input placeholder="Ex. 1XX">
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="row d-flex align-items-center justify-content-center">
+                <div class="col-md-4">
+                    <mat-slide-toggle>Has Discount*</mat-slide-toggle>
+                </div>
+                <div class="col-md-4">
+                    <mat-form-field class=" example-full-width">
+                        <mat-label>Discount Percentage*</mat-label>
+                        <input matInput #input placeholder="Value in percentage">
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="row d-flex align-items-center justify-content-center">
+                <div class="col-md-8">
+                    <mat-form-field class="example-full-width">
+                        <mat-label>Final Amount*</mat-label>
+                        <input matInput #input placeholder="Ex. 1XX">
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="row d-flex align-items-center justify-content-center">
+                <div class="col-md-8" style="padding-bottom: 25px;">
+                    <button mat-raised-button color="primary" class="btn-list">List</button>
+                    <button mat-raised-button color="warn" class="btn-save">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

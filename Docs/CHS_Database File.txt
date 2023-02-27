@@ -1,0 +1,6 @@
+create table subscriptionmaster (id serial,subcode varchar(20), subname varchar(500), subdescription varchar(5000),
+price decimal(10,2),isdiscount bool, discountpercentage decimal(5,2),finalamount decimal(10,2),isactive bool,isdeleted bool,
+createdby varchar(10),createddate timestamp,modifiedby varchar(10),modifieddate timestamp);
+
+create table subskeymapping (id serial, subid int,subcode varchar(20),keyname varchar(100), keydescription varchar(350), 
+isactive bool);

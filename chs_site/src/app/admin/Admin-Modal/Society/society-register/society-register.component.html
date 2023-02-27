@@ -1,0 +1,198 @@
+<div class="container-fluid maincard">
+    <div class="row d-flex align-items-center justify-content-center">
+        <div class="row d-flex ">
+            <div class="col-md-12">
+                <div class="title-card">
+                    Society Registration
+                </div>
+            </div>
+        </div>
+        <div class="card form-detail">
+            <form>
+                <div class="form-content row">
+                    <div class="col-md-6 gen-info">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <span class="gen-title">General Information</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <mat-form-field class="form-fields">
+                                    <mat-label>Society Code*</mat-label>
+                                    <input matInput>
+                                </mat-form-field>
+                            </div>
+                            <div class="col-md-6">
+                                <mat-form-field class="form-fields">
+                                    <mat-label>Society Name*</mat-label>
+                                    <input matInput>
+                                </mat-form-field>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <mat-form-field class="form-fields">
+                                    <mat-label>Contact Number*</mat-label>
+                                    <input matInput>
+                                </mat-form-field>
+                            </div>
+                            <div class="col-md-6">
+                                <mat-form-field class="form-fields">
+                                    <mat-label>Email ID*</mat-label>
+                                    <input matInput>
+                                </mat-form-field>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p>
+                                    <mat-form-field class="form-fields">
+                                        <mat-label>Complete Address*</mat-label>
+                                        <textarea matInput class="form-fields"></textarea>
+                                    </mat-form-field>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p>
+                                    <mat-form-field class="form-fields">
+                                        <mat-label>HOS - Head of Society*</mat-label>
+                                        <input matInput>
+                                    </mat-form-field>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <mat-form-field class="form-fields">
+                                    <mat-label>HOS:Contact Number*</mat-label>
+                                    <input matInput>
+                                </mat-form-field>
+                            </div>
+                            <div class="col-md-6">
+                                <mat-form-field class="form-fields">
+                                    <mat-label>HOS:Email ID*</mat-label>
+                                    <input matInput>
+                                </mat-form-field>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <mat-form-field class="form-fields">
+                                    <mat-label>Total Wings*</mat-label>
+                                    <input matInput>
+                                </mat-form-field>
+                            </div>
+                            <div class="col-md-6">
+                                <mat-form-field class="form-fields">
+                                    <mat-label>Total Flats*</mat-label>
+                                    <input matInput>
+                                </mat-form-field>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 ">
+                                <mat-form-field class="form-fields">
+                                    <mat-label>Description*</mat-label>
+                                    <textarea matInput class="form-fields"></textarea>
+                                </mat-form-field>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 ">
+                                <button mat-raised-button color="primary" class="btn-moreinfo">More Info.</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 off-detail off-info">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <span class="official-title">Official Details</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <mat-form-field class="form-fields-off">
+                                    <mat-label style="color: white;">Society ID*</mat-label>
+                                    <input matInput>
+                                </mat-form-field>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <mat-form-field class="form-fields-off-date" appearance="fill">
+                                    <mat-label style="color:white">Registration Date*</mat-label>
+                                    <input matInput [matDatepicker]="pickerReg">
+                                    <mat-hint style="color:white">MM/DD/YYYY</mat-hint>
+                                    <mat-datepicker #pickerReg></mat-datepicker>
+                                </mat-form-field>
+                                <button mat-raised-button class="btn-open btn-moreinfo"
+                                    (click)="pickerReg.open()">Open</button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <mat-form-field class="form-fields-off-date" appearance="fill">
+                                    <mat-label style="color:white">Activation Date*</mat-label>
+                                    <input matInput [matDatepicker]="pickerAct">
+                                    <mat-hint style="color:white">MM/DD/YYYY</mat-hint>
+                                    <mat-datepicker #pickerAct></mat-datepicker>
+                                </mat-form-field>
+                                <button mat-raised-button class="btn-open btn-moreinfo"
+                                    (click)="pickerAct.open()">Open</button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <mat-form-field class="form-fields-off-date" appearance="fill">
+                                    <mat-label style="color:white">Expiration Date*</mat-label>
+                                    <input matInput [matDatepicker]="pickerExp">
+                                    <mat-hint style="color:white">MM/DD/YYYY</mat-hint>
+                                    <mat-datepicker #pickerExp></mat-datepicker>
+                                </mat-form-field>
+                                <button mat-raised-button class="btn-open btn-moreinfo"
+                                    (click)="pickerExp.open()">Open</button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <mat-form-field class="form-fields-off">
+                                    <mat-form-field appearance="fill">
+                                        <mat-label style="color:white">Status*</mat-label>
+                                        <mat-select style="color:white">
+                                            <mat-option value="option1">Option 1</mat-option>
+                                            <mat-option value="option2">Option 2 (disabled)</mat-option>
+                                            <mat-option value="option3">Option 3</mat-option>
+                                        </mat-select>
+                                    </mat-form-field>
+                                </mat-form-field>
+                            </div>
+                            <div class="col-md-6">
+                                <mat-form-field class="form-fields-off">
+                                    <mat-label style="color: white;">Total Due*</mat-label>
+                                    <input matInput>
+                                </mat-form-field>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <mat-form-field class="form-fields-off">
+                                    <mat-label style="color: white;">Previous Due Counts*</mat-label>
+                                    <input matInput>
+                                </mat-form-field>
+                            </div>
+                            <div class="col-md-6">
+                                <mat-form-field class="form-fields-off">
+                                    <mat-label style="color: white;">Subscription Code*</mat-label>
+                                    <input matInput>
+                                </mat-form-field>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,171 @@
+.mainForm {
+    border-radius: 25px;
+}
+
+.btn-save {
+    justify-content: center;
+    border-radius: 25px;
+    width: 150px;
+}
+
+.btn-list {
+    border-radius: 25px;
+    width: 150px;
+    float: left;
+}
+
+.model-driven-form {
+    border: 1px solid #ccc;
+    padding: 2rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin: 1rem 0;
+}
+
+
+.ng-invalid.ng-touched {
+    border: 1px solid red;
+}
+
+.user-data {
+    margin: 1rem 0;
+}
+
+label {
+    margin-right: 1rem;
+}
+
+select,
+textarea {
+    width: 50%;
+}
+
+div {
+    margin-bottom: 1rem;
+}
+
+.checkboxes {
+    content: unset;
+}
+
+.disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+button {
+    margin: 2rem auto;
+    width: 40%;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    background-color: cornsilk;
+    color: black;
+    cursor: pointer;
+
+
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (min-width: 40rem) {
+    .model-driven-form {
+        width: 50%;
+        margin: 0 auto;
+    }
+}
+
+.maincard {
+    padding-top: 10px;
+    background-image: -webkit-linear-gradient(136deg, rgb(149, 153, 226) 0%, rgb(139, 198, 236) 100%);
+}
+
+
+/* Registration Form CSS */
+.form-detail {
+    background-color: aliceblue;
+    border-radius: 25px;
+    width: 75%;
+}
+
+.form-content {
+    text-align: center;
+}
+
+.gen-title {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: xx-large;
+    color: grey;
+}
+
+.official-title {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: xx-large;
+    color: white;
+}
+
+.gen-info {
+    padding: 25px;
+}
+
+.off-info {
+    padding: 25px;
+}
+
+.off-detail {
+    /* background-color: #4835d4; */
+    background-color: grey;
+}
+
+.form-fields {
+    width: 100%;
+    font-size: large;
+}
+
+.btn-moreinfo {
+    width: 100%;
+    border-radius: 25px;
+    height: 50px;
+    display: inline-flex;
+    justify-content: center;
+    /* center the content horizontally */
+    align-items: center;
+    /* center the content vertically */
+    --padding-x: 1.2em;
+    font-size: large;
+    border-color: transparent;
+}
+
+.form-fields-off {
+    width: 100%;
+    font-size: large;
+    color: white;
+}
+
+input {
+    color: #fff;
+}
+
+.example-form-field {
+    margin-right: 20px;
+}
+
+.btn-open {
+    width: 50px;
+    height: 20px;
+}
+
+.form-fields-off-date {
+    width: 80%;
+    font-size: large;
+    color: white;
+}

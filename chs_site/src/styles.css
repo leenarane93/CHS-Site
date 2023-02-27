@@ -1,4 +1,59 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.toast-container .ngx-toastr {
+    padding: 15px 30px 15px 15px;
+    background-position: 96% 16px;
+    background-repeat: no-repeat;
+    background-size: 20px;
+
+    @media screen and(max-width:767px) {
+        padding: 10px 30px 10px 10px;
+        font-size: $font-size-11px;
+        background-position: 96% 12px;
+        background-repeat: no-repeat;
+        background-size: 13px;
+    }
+}
+
+.btn-decorations {
+    border-radius: 25px;
+    width: 75px;
+}
+
+.tbl-dec {
+    width: 100%;
+}
+
+.dvRow {
+    width: 100%;
+    padding-top: 25px;
+}
+
+.title-card {
+    padding-top: 10px;
+    height: 60px;
+    width: 100%;
+    background-color: #BA8F95;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: xx-large;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    color: white;
+    text-decoration: underline;
+}
+
+.maincard {
+    padding-left: 50px;
+    padding-right: 50px;
+}
