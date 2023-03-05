@@ -20,3 +20,25 @@
     left: 10px;
     text-align: center;
 }
+
+.row-card {
+    padding: 2.5%;
+}
+
+.content-card {
+    border-radius: 30px;
+    background-color: aliceblue;
+    padding: 2.5%;
+}
+
+.whatweare {
+    text-align: left;
+    font-size: x-large;
+    color: black;
+    text-decoration: underline;
+}
+
+.whatweareimg {
+    height: 100%;
+    width: 50px;
+}

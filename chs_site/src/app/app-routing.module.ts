@@ -49,7 +49,7 @@ const routes: Routes = [{
 },
 {
   path: "common",
-  component: UserLayoutComponent,
+  component: CommonLayoutComponent,
   children: [
     {
       path: "",
