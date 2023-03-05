@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -9,6 +9,7 @@ import { OverlayModule } from '@angular/cdk/overlay';
 import { MaterialExampleModule } from './material.module';
 import { CommonModule } from '@angular/common';
 import { ToastrModule } from 'ngx-toastr';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,6 @@ import { ToastrModule } from 'ngx-toastr';
     BrowserAnimationsModule,
     MaterialExampleModule,
     NgbModule,
-    CommonModule,
     ToastrModule.forRoot({
       timeOut: 3000,
       positionClass: 'toast-top-right'
