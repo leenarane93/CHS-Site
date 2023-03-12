@@ -8,34 +8,18 @@
                 <span class="logo-title">Society Care</span>
             </a>
             <div class="text-end last-end-title-bar">
-                <button type="button" class="btn btn-warning">Contact Us</button>
+                <button type="button" (click)="OpenContactModal()" class="btn btn-warning">Contact Us</button>
                 <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
                     <mat-icon>more_vert</mat-icon>
                 </button>
                 <mat-menu #menu="matMenu" class="bg-dark">
-                    <button mat-menu-item>
+                    <button mat-menu-item (click)="NavigateForms(0)">
                         <mat-icon class="text-white">exit_to_app</mat-icon>
-                        <span class="text-white">Logout</span>
+                        <span class="text-white">Login</span>
                     </button>
-                    <button mat-menu-item>
+                    <button mat-menu-item (click)="NavigateForms(1)">
                         <mat-icon class="text-white">person</mat-icon>
-                        <span class="text-white">Profile</span>
-                    </button>
-                    <button mat-menu-item>
-                        <mat-icon class="text-white"> attach_money</mat-icon>
-                        <span class="text-white">Transactions</span>
-                    </button>
-                    <button mat-menu-item>
-                        <mat-icon class="text-white">image_search</mat-icon>
-                        <span class="text-white"> User Queries</span>
-                    </button>
-                    <button mat-menu-item>
-                        <mat-icon class="text-white">info</mat-icon>
-                        <span class="text-white">About</span>
-                    </button>
-                    <button mat-menu-item>
-                        <mat-icon class="text-white">contact_support</mat-icon>
-                        <span class="text-white">Contact US</span>
+                        <span class="text-white">Register</span>
                     </button>
                 </mat-menu>
             </div>

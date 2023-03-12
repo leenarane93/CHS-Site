@@ -1,0 +1,24 @@
+.sub-title {
+    font-size: xx-large;
+    font-family: fantasy;
+}
+
+.card-decs {
+    border-radius: 30px;
+    padding: 25px;
+    font-size: large;
+}
+
+input,
+textarea {
+    width: 100%
+}
+
+mat-form-field {
+    display: block;
+}
+
+.container {
+    width: 600px;
+    height: 700px;
+}

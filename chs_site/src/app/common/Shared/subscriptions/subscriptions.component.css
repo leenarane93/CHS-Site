@@ -1,0 +1,59 @@
+.sub-header {
+    background-color: black;
+}
+
+
+.card-25 {
+    border-radius: 30px;
+}
+
+.padding-all-30 {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.sub-title {
+    font-size: xx-large;
+    font-family: fantasy;
+}
+
+.sub-title-one {
+    color: brown;
+}
+
+.sub-title-two {
+    color: burlywood;
+}
+
+.img-care {
+    border-radius: 30px;
+    padding: 20px;
+    background-color: aliceblue;
+}
+
+.content-data {
+    font-size: xx-large;
+    padding-bottom: 55px;
+    padding-top: 55px;
+}
+
+.img-care-plans {
+    height: 500px;
+    width: 100%;
+}
+
+.maincontainer {
+    padding: 50px;
+}
+
+.note {
+    color: red;
+    font-size: x-large;
+}
+
+.note-content {
+    color: red;
+    font-size: large;
+}
