@@ -1,0 +1,24 @@
+.form-title {
+    border-radius: 30px;
+    font-size: xx-large;
+    font-family: fantasy;
+    color: black;
+    padding: 25px;
+    background-color: aliceblue;
+    text-decoration: underline;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.tag-line {
+    font-size: large;
+    color: royalblue;
+    padding: 10px;
+}
+
+mat-form-field {
+    display: block;
+}
+
+.padding-all {
+    padding: 20px;
+}
