@@ -7,6 +7,7 @@ import { UserDashboardComponent } from './user-dashboard/user-dashboard.componen
 import { MaterialExampleModule } from 'src/app/material.module';
 import { UserFooterComponent } from './shared/user-footer/user-footer.component';
 import { CustomerFeedbackComponent } from '../customer-activity/customer-feedback/customer-feedback.component';
+import { NotificationPanelComponent } from '../customer-activity/notification-panel/notification-panel.component';
 
 
 
@@ -16,7 +17,8 @@ import { CustomerFeedbackComponent } from '../customer-activity/customer-feedbac
     HeaderComponent,
     UserDashboardComponent,
     UserFooterComponent,
-    CustomerFeedbackComponent
+    CustomerFeedbackComponent,
+    NotificationPanelComponent
   ],
   imports: [
     CommonModule,

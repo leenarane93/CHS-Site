@@ -1,12 +1,11 @@
 .form-title {
-    border-radius: 30px;
     font-size: xx-large;
     font-family: fantasy;
     color: black;
     padding: 25px;
-    background-color: aliceblue;
     text-decoration: underline;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow: 2px 2px grey;
 }
 
 .tag-line {
