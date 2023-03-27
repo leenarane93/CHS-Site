@@ -4,3 +4,8 @@
     box-shadow: 0 4px 68px #0000004d;
 
 }
+
+.bg-common {
+    background-color: 37517e;
+    border-radius: 25px;
+}

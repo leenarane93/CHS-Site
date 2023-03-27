@@ -4,6 +4,7 @@ import { CommonHeaderComponent } from './Shared/common-header/common-header.comp
 import { CommonFooterComponent } from './Shared/common-footer/common-footer.component';
 import { CommonDashboardComponent } from './common-dashboard/common-dashboard.component';
 import { CommonLayoutRoutingModule } from './common-layout.routing';
+import { ContactUsComponent } from './Modal/contact-us/contact-us.component';
 
 
 
@@ -12,7 +13,8 @@ import { CommonLayoutRoutingModule } from './common-layout.routing';
     CommonLayoutComponent,
     CommonHeaderComponent,
     CommonFooterComponent,
-    CommonDashboardComponent
+    CommonDashboardComponent,
+    ContactUsComponent
   ],
   imports: [
     CommonLayoutRoutingModule
