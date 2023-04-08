@@ -1,0 +1,17 @@
+.menucls {
+    padding-left: 100px;
+    background-color: #37517e;
+    color: white;
+    padding-right: 50px;
+}
+
+.mnuitems {
+    background-color: #37517e;
+    color: white;
+}
+
+.header-mnu {
+    padding-top: 5px;
+    font-size: x-large;
+    color: white;
+}

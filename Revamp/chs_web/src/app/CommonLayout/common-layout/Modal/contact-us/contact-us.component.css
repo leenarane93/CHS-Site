@@ -1,0 +1,21 @@
+.sub-title {
+    padding-top: 25px;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.sub-title-child {
+    padding-top: 25px;
+    font-size: large;
+}
+
+.card-decs {
+    padding: 25px;
+    width: 100%;
+}
+
+.form-set {
+    height: 700px;
+    width: 500px;
+    overflow-x: visible;
+}
