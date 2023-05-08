@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { CommonLayoutComponent } from './CommonLayout/common-layout/common-layout/common-layout.component';
 import { MaterialModule } from './Material/material/material.module';
 import { UserLayoutComponent } from './user/user-layout/user-layout.component';
+import { AdminLayoutComponent } from './admin-layout/admin-layout/admin-layout.component';
 
 const routes: Routes = [{
   path: "user",
@@ -27,6 +28,19 @@ const routes: Routes = [{
       loadChildren: () =>
         import("../app/CommonLayout/common-layout/common-layout.module").then(
           (x) => x.CommonLayoutModule
+        ),
+    },
+  ],
+},
+{
+  path: "admin",
+  component: AdminLayoutComponent,
+  children: [
+    {
+      path: "",
+      loadChildren: () =>
+        import("./admin-layout/admin-layout.module").then(
+          (x) => x.AdminLayoutModule
         ),
     },
   ],

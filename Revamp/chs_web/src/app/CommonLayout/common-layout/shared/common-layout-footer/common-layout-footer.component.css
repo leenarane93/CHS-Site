@@ -1,0 +1,16 @@
+.main-footer {
+    background-color: black;
+    padding: 25px;
+}
+
+.footer-title {
+    padding-top: 50px;
+    font-size: x-large;
+    text-decoration: underline;
+    color: white;
+}
+
+.footer-menu {
+    font-size: small;
+    color: aliceblue;
+}
