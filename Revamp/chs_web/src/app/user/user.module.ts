@@ -5,6 +5,9 @@ import { UserHeaderComponent } from './Shared/user-header/user-header.component'
 import { UserFooterComponent } from './Shared/user-footer/user-footer.component';
 import { UserLayoutRoutingModule } from './user-layout.routing';
 import { UserDashboardComponent } from './user-dashboard/user-dashboard.component';
+import { UserCreationComponent } from './user-creation/user-creation.component';
+import { PageCreationComponent } from './page-creation/page-creation.component';
+import { ModuleMngComponent } from './module-mng/module-mng.component';
 
 
 
@@ -14,6 +17,9 @@ import { UserDashboardComponent } from './user-dashboard/user-dashboard.componen
     UserHeaderComponent,
     UserFooterComponent,
     UserDashboardComponent,
+    UserCreationComponent,
+    PageCreationComponent,
+    ModuleMngComponent,
   ],
   imports: [
     CommonModule,
