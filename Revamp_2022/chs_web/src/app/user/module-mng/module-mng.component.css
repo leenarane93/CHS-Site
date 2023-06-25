@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+
+.contact100-form-title {
+    display: block;
+    width: 100%;
+    font-family: 'Montserrat',
+        sans-serif;
+    font-size: 39px;
+    color: #333;
+    line-height: 1.2;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 59px;
+    text-decoration: underline;
+}
+
+.act-dec {
+    font-size: large;
+}
+
+.form-card {
+    padding: 15px;
+}

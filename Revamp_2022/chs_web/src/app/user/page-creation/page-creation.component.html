@@ -1,0 +1,82 @@
+<div class="container">
+    <div class="form">
+        <div class="row">
+            <!-- <div class="col-md-6">
+                Logo And Name
+            </div> -->
+            <div class="col-md-12">
+                <span class="contact100-form-title">
+                    Menu Management
+                </span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <hr>
+            </div>
+        </div>
+        <div class="card form-card">
+            <div class="row">
+                <div class="col-md-3">
+                    <mat-form-field class="example-full-width">
+                        <mat-label>Select Module</mat-label>
+                        <input type="text" placeholder="Select Module" aria-label="Number" matInput
+                            [formControl]="myControl" [matAutocomplete]="auto" required="true">
+                        <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete">
+                            <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+                                {{option}}
+                            </mat-option>
+                        </mat-autocomplete>
+                    </mat-form-field>
+                </div>
+                <div class="col-md-6">
+                    <mat-form-field class="example-full-width">
+                        <mat-label>Menu Name</mat-label>
+                        <input matInput required="true" placeholder="Page Name" value="">
+                    </mat-form-field>
+                </div>
+                <div class="col-md-3">
+                    <mat-form-field class="example-full-width">
+                        <mat-label>Select Role</mat-label>
+                        <input type="text" placeholder="Select Role" aria-label="Number" matInput
+                            [formControl]="myControl" [matAutocomplete]="auto" required="true">
+                        <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete">
+                            <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+                                {{option}}
+                            </mat-option>
+                        </mat-autocomplete>
+                    </mat-form-field>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <mat-form-field class="example-full-width">
+                        <mat-label>Menu Description</mat-label>
+                        <textarea matInput placeholder="Description"></textarea>
+                    </mat-form-field>
+                </div>
+                <div class="col-md-3">
+                    <mat-form-field class="example-full-width">
+                        <mat-label>Menu Position</mat-label>
+                        <input matInput type="number" required="true" placeholder="Position" value="">
+                    </mat-form-field>
+                </div>
+                <div class="col-md-3">
+                    <span class="act-dec">Active*</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <mat-slide-toggle class="example-margin" color="dark" checked="true">
+                    </mat-slide-toggle>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <button mat-raised-button>Submit</button>
+                </div>
+                <div class="col-md-6 pull-right">
+                    <button mat-raised-button>Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
